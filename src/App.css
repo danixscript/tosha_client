@@ -1,0 +1,52 @@
+.paddingbottom50{
+    padding-bottom: 50px;
+}
+.w50{
+    width: 50%;
+}
+
+.positionorders{
+    position: fixed;
+    top: 10%;
+    left: 2%;
+    min-height: 300px;
+    min-width: 200px;
+  
+}
+.bcred{
+    background-color: red;
+}
+
+.imgyy{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.footer
+{
+    height: 40vh;
+    background-color: #7E385A;
+    padding-top: 40px;
+}
+
+.end{
+    align-items: flex-end;
+}
+
+.orderslinksside{
+    padding: 10px 20px 10px 20px ;
+   border-radius: 20px;
+   color: black;
+   text-decoration: none;
+
+}
+
+.waiting{
+    background-color: yellow;
+}
+.accept{
+    background-color: green;
+}
+.denaid{
+    background-color: red;
+}

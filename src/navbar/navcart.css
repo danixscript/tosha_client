@@ -1,0 +1,129 @@
+.cartNav{
+    position: relative;
+z-index: 99999999;
+}
+.box{
+  background-color: #7E385A;
+   padding: 20px 20px 20px 20px;
+border-radius: 3px;
+text-transform: uppercase;
+color: white;
+
+}
+.cartnavpos{
+
+max-width: 800px;
+}
+.navh100vh{
+    height: 100vh;
+}
+.cartnavlist{
+  max-height: 50vh;
+  overflow-y: scroll;
+
+}
+.cartnavpos{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(228, 176, 228);
+    min-height: 100vh;
+  
+    width: 600px;
+   transition: all .3s ease-in-out;
+}
+.closeNavCart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(225, 187, 225);
+    min-height: 100vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+
+    
+}
+
+.gridcol-5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  }
+
+  .boxshadow{
+    box-shadow: 3px 10px 30px rgb(210, 207, 207);
+}
+
+
+.imagecard{
+    height: 100px ;
+    width: 100px;
+}
+
+
+.buybtn{
+    padding: 20px 30px 20px 30px;
+    background-color: rgb(172, 43, 214);
+  width: 30%;
+    font-weight: 600;
+    border-radius: 3px;
+    border: white 1px solid;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,0%);
+  }
+.ztest{
+  z-index: 9999999999;
+
+}
+
+  .butonclose{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+  }
+
+  .linkstopay{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .bybututun{
+    padding: 20px;
+    border: 4px solid white;
+    border-radius: 20px;
+    font-weight: 500;
+margin-top: 50px;
+background-color: purple;
+transition: all .1s ease-in-out;
+
+  }
+
+  .divhovershow:hover .bybututun{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .divhovershow:hover .linkstopay{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .linktopay{
+    padding: 20px;
+    border: 4px solid white;
+    border-radius: 20px;
+    font-weight: 500;
+margin-right: 10px;
+width: 70px;
+background-color: purple;
+color: white;
+text-decoration: none;
+transition: all .5s ease-in-out;
+  }

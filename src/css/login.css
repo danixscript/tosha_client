@@ -1,0 +1,44 @@
+.loginscreen{
+    min-height: 80vh;
+    width: 60%;
+}
+.controlWidthHeight{
+    width: 100%;
+    padding: 40px;
+    min-height: 50vh;
+      border-radius: 20px;
+  }
+.loginleftside{
+    width: 50%;
+    background-image: url('./../image/bakery-1868925_1280.jpg');
+    object-fit: cover;
+    background-size: cover;
+    height: 100%;
+    min-height: 50vh;
+}
+
+
+.w60{
+    width: 60%;
+}
+
+.rightside{
+    width: 50%;
+}
+
+.btnPrimery{
+    width: 50%;
+    padding: 10px 20px 10px 20px;
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 5px 10px 20px black;
+}
+
+
+

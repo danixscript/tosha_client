@@ -1,0 +1,136 @@
+
+.paddingpagehome{
+    width: 70%;
+    min-width: 700px;
+    background-color: aliceblue;
+}
+
+.centerinuu{
+    width: 100%;
+background-image: url('../image/openpic8.jpg');  
+background-position: center; 
+background-attachment: fixed;
+object-fit: cover;
+background-size: cover;
+
+height: 50vh;
+}
+
+.homeAboutComp{
+    height: 80vh;
+    width: 100%;
+ 
+}
+
+.centerAllComp{
+    width: 60%;
+    height: 90%;
+   
+}
+.bgImage{
+    height: 90%;
+    width: 80%;
+    background-image: url('../image/a1.jpeg');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.Square{
+    height: 50%;
+    width: 50%;
+    border: 5px solid purple;
+    z-index: -1;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+.kavkav{
+    width: 40px;
+    height: 2px;
+    background-color: #7E385A;
+}
+
+.buttonsAll{
+    padding: 10px 20px 10px 20px ;
+    background-color: #7E385A;
+    color: white;
+    text-decoration: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: all .4s ease-in-out;
+}
+.buttonsAll:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    
+}
+.bgImage::before{
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    height: 100%;
+    width: 100%;
+    background-color: #7E385A;
+    z-index: -1;
+}
+.sideA{
+    height: 90%;
+    width: 50%;
+    
+}
+.rotate{
+    animation: rot 20s infinite linear;
+}
+
+
+@keyframes rot {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.maxmin{
+    max-width: 200px;
+}
+.sideB{
+    height: 90%;
+    width: 50%;
+}
+.wordsSide{
+    padding: 30px;
+}
+.drtl{
+    direction: rtl;
+
+}
+.p{
+    margin-bottom: 20px;
+    width: 70%;
+ font-size: 1.6rem;
+}
+
+.bgfixc{
+    height: 40vh;
+    width: 100%;
+    background-image: url('../image/openpic6.jpg');
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+
+.phone{
+    font-size: 2rem;
+    color: white;
+    font-weight: 100;
+}
+h1{
+    font-weight: 100;
+}

@@ -1,0 +1,332 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+padding: 0;
+margin: 0;
+
+}
+.orderwait{background-color: yellow !important;}
+.paddingyakuza{
+  width: 70% ;
+  margin: 0 auto;
+}
+.flexcenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flexbetwee{
+  display: flex;
+  flex-direction: column;
+ align-items: flex-start;
+ 
+}
+.between{
+  justify-content: space-between;
+  align-items: center;
+}
+.colorroyalblue{
+  background-color: royalblue;
+}
+.colorgreen{
+  background-color: yellowgreen;
+}
+.flexrowcenter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.flexrow{
+  display: flex;
+  flex-direction: row;
+}
+.flexcol{
+  display: flex;
+  flex-direction: column;
+
+}
+.spaceb{
+  justify-content: space-between;
+}
+
+
+/* .appall{
+  padding-top: 60px;
+} */
+.hw100{
+  height: 100%;
+  width: 100%;
+
+}
+.center{
+  align-items: center;
+  justify-content: center;
+}
+.w100{
+  width: 100%;
+}
+.h100{
+  height: 100%;
+}
+.bc{
+  background-color: aqua;
+}
+.colorlightblue{
+  background-color: aliceblue;
+}
+.inputuser{
+  height: 40px;
+  margin-bottom: 25px;
+}
+/* .butbuttondivdisabled{
+  padding: 10px 30px 10px 30px;
+  background-color: rgb(127, 127, 127);
+
+  font-weight: 600;
+  border-radius: 3px;
+  border: white 1px solid;
+  color: white;
+} */
+
+.buybtn2{
+height: 40px;
+  background-color: yellowgreen;
+width: 100%;
+
+  font-weight: 600;
+  border-radius: 3px;
+  border: white 1px solid;
+  color: white;
+}
+/* .buybtn3{
+  height: 40px;
+    background-color: rgb(205, 161, 50);
+  width: 100%;
+  
+    font-weight: 600;
+    border-radius: 3px;
+    border: white 1px solid;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    text-transform: uppercase;
+  } */
+
+/* .marginr{
+  margin-right: 15px;
+} */
+.spacebetween{
+  justify-content: space-between;
+}
+.w30{
+  width: 30%;
+}
+
+.logout{
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(234, 36, 36);
+  font-weight: 600;
+  border-radius: 3px;
+  
+  color: white;
+}
+
+
+.padtext{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.boxsize{
+  padding: 10px 20px 10px 20px;
+}
+.cruser{
+  cursor: pointer;
+}
+
+
+.incbtn{
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-right: 13px;
+  margin-left: 13px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-transform: uppercase;
+  
+  
+}
+.w50now{
+width: 50%;
+}
+.around{
+  justify-content: space-around;
+}
+.text28{
+  font-size: 28px;
+}
+.borr3{
+  border-radius: 3px;
+}
+.paddingpage{
+  width: 70%;
+  background-color: rgb(16, 119, 210);
+  
+}
+.amountnum{
+  width: 45px;
+  background-color: rgb(196, 196, 196);
+  font-size: 23px;
+}
+.disableConsole{
+  width: 400px;
+  visibility: hidden;
+  height: 0;
+  padding: 10px 20px 10px 20px;
+  position:fixed;
+  top:8%;
+  left: 3%;
+  transition: all .5s ease-in-out;
+}
+.badmessage{
+  background-color: red;
+  color: white;
+}
+.goodmsg{
+  background-color: greenyellow;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+.padding15{
+  padding: 15px;
+}
+.w40{
+  width: 30%;
+}
+.consoleMessage{
+  width: 400px;
+  background-color: rgb(78, 80, 80);
+color: white;
+  height: 200px;
+  padding: 10px 20px 10px 20px;
+  position:fixed;
+  top:8%;
+  left: 3%;
+  transition: all .5s ease-in-out;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  border-top-right-radius: 20px;
+
+
+}
+
+.goshop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text{
+  padding: 20px;
+  background-color: bisque;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.gologbtn{
+  margin-left: 10px;
+  background-color: aliceblue;
+  padding: 5px;
+  border: 1px solid rgb(223, 231, 238);
+  cursor: pointer;
+  
+}
+
+.navphon{
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+
+.posre{
+  position: relative;
+}
+.marginbottom40{
+  margin-bottom: 40px;
+}
+.bet{
+  justify-content: space-between;
+}
+.shadow{
+  box-shadow: 1px 20px 40px rgb(220, 209, 209);
+}
+
+
+.borderbottom{
+  border-bottom: 1px solid black;
+}
+
+
+
+.padding{
+  margin-bottom: 20px;
+}
+
+.paddpage{
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+.ordersWaiting{
+padding: 10px;
+border-radius: 20px;
+text-align: center;  
+}
+
+.bcyellow{
+  background-color: rgb(232, 232, 116);
+
+}
+.bcgreen{
+  background-color: rgb(13, 169, 47);
+
+}
+.paid{
+  background-color: green;
+}
+.notpaid{
+  background-color: red;
+}
+
+
+
+.zindexlong{
+  z-index: 999999999999999999999999999999;
+}
+
+
+
+
+.pagelink{
+  padding: 10px 20px;
+  border-radius: 3px;
+  background-color: rgb(194, 203, 229);
+  margin-right: 15px;
+  transition: all .3s;
+  cursor: pointer;
+}
+.pagelink:hover{
+  background-color: royalblue;
+}
