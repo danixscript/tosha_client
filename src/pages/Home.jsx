@@ -10,6 +10,9 @@ function Home() {
   const user = useSelector((state) => state.user);
   console.log(user);
 
+
+
+
   return (
     <div className=" flexcol center w100  h100">
       <div className="centerinuu"></div>
