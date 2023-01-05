@@ -29,7 +29,7 @@ export default function TablePlaceOrder(props) {
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right"><img src={row.productimg} alt="" className="img" /></TableCell>
+              <TableCell align="right"><img src={row.productimg} alt="" className="img maxxhh" /></TableCell>
 
               <TableCell align="right">{row.itemname}</TableCell>
               <TableCell align="right">{row.price}</TableCell>

@@ -23,6 +23,8 @@ function PlaceOrder(props) {
   const dispatch = useDispatch();
   const [isbut, setisbuy] = useState(false);
   const [sumorder, setSumOrder] = useState(0);
+  const [countPepul, setPepurCou] = useState(0);
+  const [textState, setTtextState] = useState("");
 
   const [peopleCount, setPeupleCount] = useState({ upto15: false, howmeny: 1 });
   const [istheuserChoose, setistheuserChoose] = useState(false);
@@ -38,11 +40,23 @@ function PlaceOrder(props) {
     dispatch(setOrderRedy(item));
   }, [item]);
 
+
+
   function getPepuleCount(e) {
+  
+    setPepurCou(e.target.value)
+   
+  }
+
+  function gettext(e){
+    setTtextState(e.target.value)
+  }
+
+  function getPepuleCountClick(){
     setistheuserChoose(true);
-    if (e.target.value > 15) {
+    if (countPepul > 15) {
       let a = orders
-      setPeupleCount({ upto15: true, howmeny: e.target.value });
+      setPeupleCount({ upto15: true, howmeny:countPepul });
       dispatch(
         waitForRespons({
           item: item,
@@ -51,10 +65,11 @@ function PlaceOrder(props) {
           active: false,
           peopleCount: true,
           sumorder: sumorder,
+          text:textState
         })
       );
     } else {
-      setPeupleCount({ upto15: false, howmeny: e.target.value });
+      setPeupleCount({ upto15: false, howmeny: countPepul });
     }
   }
 
@@ -68,6 +83,7 @@ function PlaceOrder(props) {
         ordertype: location.state.type,
         active: true,
         peopleCount: peopleCount.upto15,
+        text:textState
       })
       .then((res) => {
         if (res.data.err) {
@@ -87,7 +103,7 @@ function PlaceOrder(props) {
   }
 
   return (
-    <div className=" paddingyakuza  ">
+    <div className=" paddingyakuza  minpage">
       <h1> {location.state.type == "TA" ? "TAהזמנה ב  " : "הזמנה בלשבת"}</h1>
 
       <div className="flexrow bet w100">
@@ -98,6 +114,8 @@ function PlaceOrder(props) {
         <div className="formSide w50now flexcol ">
           {location.state.type == "TA" ? (
             <div className="form  ">
+                <textarea name="" onChange={gettext} id="" cols="30" rows="10"></textarea>
+
               <PlaceOrderForm buyItem={buyItem} />
               {orders.orderTotalPrice}שח
             </div>
@@ -108,12 +126,7 @@ function PlaceOrder(props) {
                   <div className="o">
                     <h1>כמה אנשים תהיו</h1>
 
-                    <select onChange={getPepuleCount} name="" id="">
-                      <option value="1">1-2</option>
-                      <option value="5">5-8</option>
-                      <option value="14">10-14</option>
-                      <option value="16">15-20</option>
-                    </select>
+                   <input onChange={getPepuleCount} type="number" max={0} /> <button onClick={getPepuleCountClick}>שלח</button>
                   </div>
                 ) : (
                   <div className="">
@@ -128,9 +141,11 @@ function PlaceOrder(props) {
                     ) : (
                       <div className="form  ">
                         <div onClick={goBackto} className="back">
-                          --_-
+                         חזור אחורה
                         </div>
                         <h1> אנה הזינו פרטי תשלום </h1>
+                        <h5>הערות נוספות?</h5>
+                        <textarea name="" onChange={gettext} id="" cols="30" rows="10"></textarea>
 
                         <PlaceOrderForm buyItem={buyItem} />
                       </div>

@@ -19,6 +19,7 @@ export default function CartTAselection(props) {
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           value={props.value}
+         
           onChange={(e)=>{setStatetext(e.target.value)}}
           label={"TA"}
         >

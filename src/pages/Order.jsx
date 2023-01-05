@@ -15,7 +15,12 @@ const dispatch = useDispatch();
 const [OrderStats,setOrderStats] = useState(false)
 const [someFliper,setsomeFliper] = useState(false)
 const [isbut,setIsByt] = useState(false)
+const [textState, setTtextState] = useState("");
 
+
+function gettext(e){
+  setTtextState(e.target.value)
+}
 let location = useLocation();
   let totalpp = 0
 useEffect(()=>{
@@ -33,7 +38,7 @@ function gotit(e){
 
 function paynow(){
   setsomeFliper(true)
-  dispatch(payNow({orderid:location.state.orderid,userid:user.user.id}))
+  dispatch(payNow({orderid:location.state.orderid,userid:user.user.id,text:textState}))    
   setIsByt(true)
 }
 if (isbut) {
@@ -42,13 +47,19 @@ if (isbut) {
 
 
   return ( 
-    <div className=" paddingPage flexcol center ">
+    <div className=" paddingPage flexcol center minpage w70">
 
- <h1>order</h1>
+ <h1>פירוט הזמנה</h1>
  
   
 {order.notActiveOrderInfo.length >0?
-<div className=" flexrow  ">
+<div className=" flexcol w100 h100 ">
+<div className="flexrow w100 ">
+    <p className="p">מחיר </p>
+    <p className="p">כמות</p>
+    <p className="p">שם</p> 
+    <p className="p">מחיר כולל</p>
+  </div>
 {order.notActiveOrderInfo.map((e)=>{
             totalpp = totalpp + ( e.userproductprice * e.userproductquantity)
             if(!OrderStats && e.uptofiftin == null){
@@ -56,22 +67,17 @@ if (isbut) {
             }
 
   return(
-<div className="ordertable">
-<div className={e.active == 1 ? " flexrow center bcgreen " : "  flexrow center"}>
-      <p className="textmail">{( e.userproductprice * e.userproductquantity)}</p>
-      <p className="textmil">{e.userproductid}</p>  
-      <p className="textmil">{e.userproductquantity}</p>
-      <p className="textmil">{e.userproductname}</p>
-      <p className="textmil">{e.userproductprice}</p>   
-      <img src={e.userproductimg} alt="" className="img imgyy" />
-    </div>
-    
-</div>
-  )
-})}
-<br />
+<div className="orderinfott    ">
+<div className="flexcol w100">
 
-<div className="orderStatus">
+<div className={e.active == 1 ? " flexrow center bcgreen " : "  flexrow center"}>
+      <p className="p">{( e.userproductprice * e.userproductquantity)}</p> 
+      <p className="p">{e.userproductquantity}</p>
+      <p className="p">{e.userproductname}</p>
+      <p className="p">{e.userproductprice}</p>   
+      <img src={e.userproductimg} alt="" className="img imgyy maxxh" />
+    </div>
+    <div className="orderStatus">
 
 
   {
@@ -89,6 +95,8 @@ if (isbut) {
     else if (order.notActiveOrderInfo[0].uptofiftin == 0 && order.notActiveOrderInfo[0].active == 0){
 return(
   <div className="formpay">
+      <textarea name="" onChange={gettext} id="" cols="30" rows="10"></textarea>
+
   <PlaceOrderForm buyItem={paynow} />
   {totalpp }שח
 </div>
@@ -111,6 +119,14 @@ return(
 
 
 </div>
+</div>
+    
+</div>
+  )
+})}
+<br />
+
+
 
 </div>
 

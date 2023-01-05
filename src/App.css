@@ -50,3 +50,17 @@
 .denaid{
     background-color: red;
 }
+
+.maxxhh{
+    max-height: 100px;
+}
+
+.orderside{
+    margin-right: 20px;
+}
+
+.formSide{
+    padding: 10px;
+    margin: 20px;
+    direction: rtl;
+}

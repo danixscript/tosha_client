@@ -212,9 +212,9 @@ width: 50%;
 }
 .consoleMessage{
   width: 400px;
-  background-color: rgb(78, 80, 80);
-color: white;
-  height: 200px;
+background-color: rgb(121, 0, 0);
+color: rgb(255, 255, 255);
+  min-height: 100px;
   padding: 10px 20px 10px 20px;
   position:fixed;
   top:8%;
@@ -227,7 +227,17 @@ color: white;
 
 
 }
+.btonclose{
+padding: 5px;
+  
 
+}
+.w70{
+  width: 70%;
+}
+.minpage{
+  min-height: 90vh;
+}
 .goshop{
   display: flex;
   flex-direction: column;

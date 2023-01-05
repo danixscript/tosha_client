@@ -24,7 +24,7 @@ export const getBakeryProducts = (data) => async (dispatch) => {
         if (res.data.err) {
           return dispatch({
             type: MSG,
-            data: {type:'bad',msg:"somthing wrong : " + res.data.err.msg }
+            data: {type:'bad',msg:"ישנה בעיה  : " + res.data.err.msg }
           })
 
         } else {
@@ -48,7 +48,7 @@ export const getBakeryProducts = (data) => async (dispatch) => {
 
         dispatch({
           type: MSG,
-          data: {type:'bad',msg:"somthing wrong" + err.message}
+          data: {type:'bad',msg:"ישנה בעיה " + err.message}
         })
 
       });
@@ -78,7 +78,7 @@ export const clearState = (data) => async (dispatch) => {
   } catch (e) {
     dispatch({
       type: MSG,
-      data:{type:'bad',msg:"somthing wrong" + e.message}
+      data:{type:'bad',msg:"ישנה בעיה " + e.message}
     })
   }
 }
@@ -97,7 +97,7 @@ export const singleProductPage = (data) => async (dispatch) => {
         if (res.data.err) {
           return dispatch({
             type: MSG,
-            data: {type:'bad',msg:"somthing wrong" + res.data.err.msg}
+            data: {type:'bad',msg:"ישנה בעיה " + res.data.err.msg}
           })
 
         } else {
@@ -116,7 +116,7 @@ export const singleProductPage = (data) => async (dispatch) => {
         console.log('err')
         dispatch({
           type: MSG,
-          data: {type:'bad',msg:"somthing wrong" + err.message}
+          data: {type:'bad',msg:"ישנה בעיה " + err.message}
         })
 
       });

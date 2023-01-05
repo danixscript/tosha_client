@@ -12,15 +12,16 @@ import ProductPage from "../pages/ProductPage";
 import PrivateOrederList from "../router/PrivateOrederList";
 import PlaceOrder from "../pages/PlaceOrder";
 import ThankPage from "../pages/ThankPage";
+import About from "../pages/About";
+
 import Order from "../pages/Order";
 import ForgotPassword from "../pages/ForgotPassword";
-import PlaceOrderAterCheck from "../pages/PlaceOrderAterCheck";
 import LOGO from '../image/a3.jpeg'
 
 // commit
 function NavRoute() {
   return (
-    <div className="flexcol center">
+    <div className="flexcol center w100">
 
 
 <div className="navplaceFix w100">
@@ -32,6 +33,8 @@ function NavRoute() {
 <Route path="/" element={<Home/>} exact/>
 <Route path="/*" element={<Home/>} exact/>
 <Route path="/forgotpass" element={<ForgotPassword/>} exact/>
+
+<Route path="/about" element={<About/>} exact/>
 
 <Route path="/createuser" element={<CreateUser/>} exact/>
 <Route path="/login" element={<Login/>} exact/>
@@ -47,9 +50,7 @@ function NavRoute() {
 <Route path="/profile" element={<Profile/>} exact/>
 </Route>
 
-<Route path="/placeorderafter" element={ <PrivateRoute />} exact> 
-<Route path="/placeorderafter" element={<PlaceOrderAterCheck/>} exact/>
-</Route>
+
 
 
 

@@ -49,8 +49,8 @@ function closeError(){
   return (
     <div className="App">
       <div className={err.active_message?"consoleMessage zindexlong":"disableConsole zindexlong"}>
-        <button onClick={closeError}>סגור מסך </button>
-        <h1>הודעה :0::001</h1>
+        <button className='btonclose' onClick={closeError}>סגור מסך </button>
+        <h1>הודעה</h1>
         <div className={err.type == 'good' ? "goodmsg":''}>
           <p>{err.msg}</p>
         </div>
@@ -130,7 +130,7 @@ return(
 
      <br />
 
-  <h4 className='phone'>03-5465438</h4>
+  <h4 className='phone'>05-58174355</h4>
 </div>
 
 

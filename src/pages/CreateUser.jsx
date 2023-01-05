@@ -66,7 +66,7 @@ function CreateUser() {
     <div className="flexcol center ">
 
  <div className="">
- <h1>creat user</h1>
+ <h1>צור משתמש </h1>
   <CreateUserform createUser={createUser} />
 
   <NavLink to={'/login'}>login</NavLink>

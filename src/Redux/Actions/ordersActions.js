@@ -35,7 +35,7 @@ export const getOrderById = (data) => async (dispatch)=>{
         .then((res) => {
 
           if(res.data.err){
-            dispatch({type:ERROR,data:"somthing wrong"})
+            dispatch({type:ERROR,data:"ישנה בעיה "})
       
           }else{
            if(res.data.data){
@@ -51,7 +51,7 @@ export const getOrderById = (data) => async (dispatch)=>{
           }
         })
         .catch((err) => {
-          dispatch({type:ERROR,data:"somthing wrong"})
+          dispatch({type:ERROR,data:"ישנה בעיה "})
         });
 
     }catch(e){
@@ -77,7 +77,7 @@ export const getOrderInfoBYID = (data) => async (dispatch)=>{
       .then((res) => {
 
         if(res.data.err){
-          dispatch({type:ERROR,data:"somthing wrong"})
+          dispatch({type:ERROR,data:"ישנה בעיה  "})
     
         }else{
          if(res.data.data){
@@ -93,7 +93,7 @@ export const getOrderInfoBYID = (data) => async (dispatch)=>{
         }
       })
       .catch((err) => {
-        dispatch({type:ERROR,data:"somthing wrong"})
+        dispatch({type:ERROR,data:"ישנה בעיה  "})
       });
 
   }catch(e){
@@ -120,7 +120,7 @@ export const payNow = (data) => async (dispatch)=>{
       .then((res) => {
 
         if(res.data.err){
-          dispatch({type:ERROR,data:"somthing wrong"})
+          dispatch({type:ERROR,data:"ישנה בעיה "})
     
         }else{
          if(res.data.data){
@@ -136,7 +136,7 @@ export const payNow = (data) => async (dispatch)=>{
         }
       })
       .catch((err) => {
-        dispatch({type:ERROR,data:"somthing wrong"})
+        dispatch({type:ERROR,data:"ישנה בעיה "})
       });
 
   }catch(e){
@@ -180,7 +180,7 @@ export const waitForRespons = (data) => async (dispatch) => {
         }
       })
       .catch((err) => {
-        dispatch({type:MSG,data:{type:'bad',msg:"somthing wrong" + err.message}})
+        dispatch({type:MSG,data:{type:'bad',msg:"ישנה בעיה " + err.message}})
       });
 
 
@@ -204,7 +204,7 @@ export const getAllMyNotActiveOrders = (data) => async (dispatch) => {
       )
       .then((res) => {
         if(res.data.err){
-          dispatch({type:MSG,data:{type:'bad',msg:"somthing wrong" }})
+          dispatch({type:MSG,data:{type:'bad',msg:"ישנה בעיה " }})
     
         }else{
          
@@ -225,7 +225,7 @@ export const getAllMyNotActiveOrders = (data) => async (dispatch) => {
         }
       })
       .catch((err) => {
-        dispatch({type:MSG,data:{type:'bad',msg:"somthing wrong" + err.message}})
+        dispatch({type:MSG,data:{type:'bad',msg:"ישנה בעיה " + err.message}})
       });
 
 
@@ -251,7 +251,7 @@ export const userSeeTheOrderNow = (data) => async (dispatch)=>{
       .then((res) => {
 
         if(res.data.err){
-          dispatch({type:ERROR,data:"somthing wrong"})
+          dispatch({type:ERROR,data:"ישנה בעיה "})
     
         }else{
          if(res.data.data){
@@ -266,7 +266,7 @@ export const userSeeTheOrderNow = (data) => async (dispatch)=>{
         }
       })
       .catch((err) => {
-        dispatch({type:ERROR,data:"somthing wrong"})
+        dispatch({type:ERROR,data:"ישנה בעיה "})
       });
 
   }catch(e){

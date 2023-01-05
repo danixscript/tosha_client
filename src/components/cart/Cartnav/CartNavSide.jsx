@@ -87,7 +87,7 @@ function CartNavSide(props) {
                 <div className={"divhovershow  flexcol center w100"}> 
             
                 <div className="bybututun">הזמן עכשיו</div>
-                <div className=" linkstopay flexrow center">
+                <div className=" linkstopay flexrow center" onClick={props.closenavbar}>
                 <NavLink to={"/placeorder"} className='linktopay' state={{ type: "TA" }}>
                   {" "}
                 TA

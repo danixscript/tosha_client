@@ -20,9 +20,8 @@ function PlaceOrderForm(props) {
     </div>
     <br />
     <div className="flexrow">
-    <TextField id="standard-basic" required label="date" variant="standard" />
     <TextField id="standard-basic" required label="CVV" variant="standard" />
-    <TextField id="standard-basic" required label="ZIpcode" variant="standard" />
+    <input type="date" name="" id="" />
     </div>
     <br />
     <Button type='submit' variant="outlined">קנה עכשיו</Button>

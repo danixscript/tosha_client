@@ -20,9 +20,15 @@ const products = (state = initialState, action) => {
       };
       console.log(action.data)
 
-      msg.msg = action.data.msg
-      msg.active_message = true
-      msg.type = action.data.type
+   if(action.data){
+    msg.msg = action.data.msg
+    msg.active_message = true
+    msg.type = action.data.type
+   }else{
+    msg.msg =''
+    msg.active_message = false
+    msg.type = ''
+   }
 
       return msg;
 
