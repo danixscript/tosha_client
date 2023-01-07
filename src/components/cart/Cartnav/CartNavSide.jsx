@@ -28,10 +28,10 @@ function CartNavSide(props) {
                         </div>
 
                         <div className="info flexrow between">
-                          <p> :כמות {e.amount}</p>
+                          <p> כמות {e.amount}</p>
                         </div>
                         <div className="info flexrow between">
-                          <p> מחיר: ש"ח{e.price} </p>
+                          <p> ש"ח{e.price} </p>
                         </div>
 
                         <div className="amountcard divbtninc flexcol center">
@@ -62,7 +62,7 @@ function CartNavSide(props) {
                               props.deleteall(e);
                             }}
                           >
-                            delete
+                            הורד מהסל
                           </button>
                         </div>
                       </div>

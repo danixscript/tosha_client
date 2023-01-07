@@ -60,14 +60,7 @@ if (isbut) {
   
 {order.notActiveOrderInfo.length >0?
 <div className=" flexcol w100 h100 ">
-<div className="flexrow w100 ">
-    <p className="p">מחיר </p>
-    <p className="p">כמות</p>
-   
-    <p className="p">מחיר כולל</p>
-     <p className="p">שם</p> 
-    
-  </div>
+
 {order.notActiveOrderInfo.map((e)=>{
             totalpp = totalpp + ( e.userproductprice * e.userproductquantity)
             if(!OrderStats && e.uptofiftin == null){
@@ -78,23 +71,30 @@ if (isbut) {
 <div className="orderinfott    ">
 <div className="flexcol w100">
 
-
-    <div className={(()=>{
+<div className="maxh600">
+  
+<div className={(()=>{
   if(e.active == 1){
     return 'bordergreen  flexrow center'
   }else if(e.active == 0 && e.uptofiftin == null){
     return 'borderred  flexrow center'
   }else if(e.active == 0 && e.uptofiftin == 1){
     return 'borderyellow  flexrow center'
+  }else{
+    return 'flexrow center'
   }
 })()}>
-      <p className="p">ש"ח  {( e.userproductprice * e.userproductquantity)}</p> 
-      <p className="p">{e.userproductquantity}</p>
+      
      
-      <p className="p">{e.userproductprice} ש"ח</p> 
-      <p className="p">{e.userproductname}</p>   
+   
+      <p className="p textpad">{e.userproductname}</p>  
+      <p className="p textpad">{e.userproductprice} ש"ח</p>  
       <img src={e.userproductimg} alt="" className="img imgyy maxxh" />
+
+      <p className="p textpad">ש"ח  {( e.userproductprice * e.userproductquantity)}</p> 
+      <p className="p textpad">כמות:{e.userproductquantity}</p>
     </div>
+</div>
     <div className="orderStatus">
 
 
@@ -112,10 +112,15 @@ if (isbut) {
     }
     else if (order.notActiveOrderInfo[0].uptofiftin == 0 && order.notActiveOrderInfo[0].active == 0){
 return(
-  <div className="formpay">
+  <div className="formpay w70">
+<div className="flexcol">
+<label htmlFor="">הערות למסעדה</label>
       <textarea name="" onChange={gettext} id="" cols="30" rows="10"></textarea>
+      <label htmlFor="">פרטי אשראי</label>
+      <PlaceOrderForm buyItem={paynow} />
+</div>
 
-  <PlaceOrderForm buyItem={paynow} />
+  
   {totalpp }שח
 </div>
 )

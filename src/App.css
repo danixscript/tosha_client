@@ -16,7 +16,13 @@
 .bcred{
     background-color: red;
 }
-
+.textpad{
+    padding: 5px;
+}
+.maxh600{
+    max-height: 800px;
+    overflow: scroll;
+}
 .imgyy{
     max-height: 100px;
     max-width: 100px;
