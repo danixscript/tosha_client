@@ -100,7 +100,7 @@ function Navbar(props) {
               <NavLink
                 activeclassname="active_Link"
                 className="Link"
-                to="/about"
+                to="/"
               >
                 דף הבית
               </NavLink>
