@@ -41,7 +41,7 @@ function MyOrders(props) {
                         </Link>  
                       </td>
 
-                      <td> {e.orderprice}</td>
+                      <td> {e.orderprice} ש"ח</td>
                       <td> {e.active}</td>
                       <td>{e.date.split('T')}</td>
                     </tr>

@@ -16,6 +16,9 @@ const [OrderStats,setOrderStats] = useState(false)
 const [someFliper,setsomeFliper] = useState(false)
 const [isbut,setIsByt] = useState(false)
 const [textState, setTtextState] = useState("");
+const [isUnderstand,setisUnderstand] = useState(false)
+
+
 
 
 function gettext(e){
@@ -26,12 +29,15 @@ let location = useLocation();
 useEffect(()=>{
   setsomeFliper(false)
   setOrderStats(false)
+  setisUnderstand(false)
   setIsByt(false)
 totalpp = 0
 dispatch(getOrderInfoBYID(location.state.orderid))
 },[location.state.orderid])
 
 function gotit(e){
+  setisUnderstand(true)
+  order.notActiveOrderInfo[0].usersee = 0
   dispatch(userSeeTheOrderNow(e))
 
 }
@@ -47,7 +53,7 @@ if (isbut) {
 
 
   return ( 
-    <div className=" paddingPage flexcol center minpage w70">
+    <div className=" paddingPage flexcol  minpage w70 drtl">
 
  <h1>פירוט הזמנה</h1>
  
@@ -57,8 +63,10 @@ if (isbut) {
 <div className="flexrow w100 ">
     <p className="p">מחיר </p>
     <p className="p">כמות</p>
-    <p className="p">שם</p> 
+   
     <p className="p">מחיר כולל</p>
+     <p className="p">שם</p> 
+    
   </div>
 {order.notActiveOrderInfo.map((e)=>{
             totalpp = totalpp + ( e.userproductprice * e.userproductquantity)
@@ -70,11 +78,21 @@ if (isbut) {
 <div className="orderinfott    ">
 <div className="flexcol w100">
 
-<div className={e.active == 1 ? " flexrow center bcgreen " : "  flexrow center"}>
-      <p className="p">{( e.userproductprice * e.userproductquantity)}</p> 
+
+    <div className={(()=>{
+  if(e.active == 1){
+    return 'bordergreen  flexrow center'
+  }else if(e.active == 0 && e.uptofiftin == null){
+    return 'borderred  flexrow center'
+  }else if(e.active == 0 && e.uptofiftin == 1){
+    return 'borderyellow  flexrow center'
+  }
+})()}>
+      <p className="p">ש"ח  {( e.userproductprice * e.userproductquantity)}</p> 
       <p className="p">{e.userproductquantity}</p>
-      <p className="p">{e.userproductname}</p>
-      <p className="p">{e.userproductprice}</p>   
+     
+      <p className="p">{e.userproductprice} ש"ח</p> 
+      <p className="p">{e.userproductname}</p>   
       <img src={e.userproductimg} alt="" className="img imgyy maxxh" />
     </div>
     <div className="orderStatus">
@@ -105,7 +123,13 @@ return(
       return(
 <div className="">
 <h1 className="a">הזמנה מבוטלת </h1>
-<button onClick={()=>{gotit(order.notActiveOrderInfo[0])}} >הבנתי תודה</button>
+
+
+{order.notActiveOrderInfo[0].usersee ==0? 
+<h3>תודה על ההבנה</h3>
+
+:
+<button onClick={()=>{gotit(order.notActiveOrderInfo[0])}} >הבנתי תודה</button>}
 
 </div>
 

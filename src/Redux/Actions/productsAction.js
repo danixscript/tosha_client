@@ -20,12 +20,12 @@ export const getBakeryProducts = (data) => async (dispatch) => {
  
     await axiosConfig
       .get("/store/products")
-      .then((res) => {
+      .then((res) => { 
         if (res.data.err) {
           return dispatch({
             type: MSG,
             data: {type:'bad',msg:"ישנה בעיה  : " + res.data.err.msg }
-          })
+          });
 
         } else {
           for(let i = 0; i < res.data.allProducts.length; i++){

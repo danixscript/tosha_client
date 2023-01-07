@@ -52,9 +52,7 @@ function Navbar(props) {
             <div className="flexcol centerright">
             <p> טלפון: 05-58174355</p>
                <p>א - ה משעה 7:00</p>
-               <p className="lilcircle flexrow bet w100">
-                <span className="circlie"></span><span className="circlie"></span><span className="circlie"></span>
-               </p>
+            
             </div>
             <div className="ksv"></div>
               </div>
@@ -89,8 +87,8 @@ function Navbar(props) {
               )}
               {/* <NavCart disabledPopUp={disabledPopUp} deleteall={deleteall} setAmount={setAmount} decreamNum={decreamNum} increamNum={increamNum} isActive={navPopUp}  cart={card.cardItems} /> */}
 
-              <NavLink activeclassname="active_Link" className="Link" to="/">
-                קצת עלינו
+              <NavLink activeclassname="active_Link" className="Link" to="/about">
+               ביקורות
               </NavLink>
               <NavLink
                 activeclassname="active_Link"

@@ -27,7 +27,7 @@ function Card(props) {
 
                 </div>
                 <div className="price padtext">
-                  <strong>{props.e.price}$</strong>  
+                  <strong>{props.e.price}  ש"ח</strong>  
                     
                 </div>
 

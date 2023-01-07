@@ -17,7 +17,7 @@ function Store() {
   const [arrayPerPage, setArrayPerPage] = useState(5);
 
   useEffect(() => {
-    signProduct()
+    signProduct() 
  
   }, [cartItems.cardItems]);
 

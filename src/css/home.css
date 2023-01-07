@@ -5,15 +5,53 @@
     background-color: aliceblue;
 }
 
+button{
+    padding: 10px;
+}
+
 .centerinuu{
     width: 100%;
-background-image: url('../image/openpic8.jpg');  
-background-position: center; 
+background-image: url('../image/toshaplace.jpg'); 
+
+background-position: bottom; 
 background-attachment: fixed;
 object-fit: cover;
 background-size: cover;
 
-height: 50vh;
+height: 54vh;
+}
+.bordergreen{
+    border:  3px solid green;
+}
+.borderred{
+    border:  3px solid red;
+}
+.borderyellow{
+    border:  3px solid yellow;
+}
+.padf{
+    padding: 20px;
+}
+.aboutwords{
+    direction: rtl;
+    font-size: 1.6rem;
+    width: 60%;
+}
+.grid-3-r{
+    display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 20px;
+
+}
+.centerinuu2{
+    width: 100%;
+    background-image: url('../image/toshasunset2.jpg'); 
+    background-position: bottom;
+    background-attachment: fixed;
+    object-fit: cover;
+    background-size: cover;
+    
+    height: 34vh;
 }
 
 .homeAboutComp{
@@ -30,7 +68,7 @@ height: 50vh;
 .bgImage{
     height: 90%;
     width: 80%;
-    background-image: url('../image/a1.jpeg');
+    background-image: url('../image/toshasofganiya.jpg');
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -119,7 +157,7 @@ height: 50vh;
 .bgfixc{
     height: 40vh;
     width: 100%;
-    background-image: url('../image/openpic6.jpg');
+    background-image: url('../image/food.jpg');
     background-size: cover;
     object-fit: cover;
     background-attachment: fixed;
