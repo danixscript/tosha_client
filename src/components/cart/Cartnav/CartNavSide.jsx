@@ -10,7 +10,7 @@ function CartNavSide(props) {
   return (
     <div className="flexcol w100 center ">
       <button className="butonclose" onClick={props.closenavbar}>
-        ===
+       סגור עגלה
       </button>
       <div className=" ">
         {props.cart && props.cart.length > 0 ? (
@@ -22,19 +22,19 @@ function CartNavSide(props) {
                 return (
                   <div key={e.id} className=" boxshadow">
                     <div className="cartcard ">
-                      <div className="gridcol-5   between  elecart">
+                      <div className="flexrow   between  elecart">
                         <div className="imagecard">
                           <img src={e.productimg} alt="" className="img" />
                         </div>
 
                         <div className="info flexrow between">
-                          <p> כמות {e.amount}</p>
+                          <p> :כמות {e.amount}</p>
                         </div>
                         <div className="info flexrow between">
-                          <p> מחיר {e.price}</p>
+                          <p> מחיר: ש"ח{e.price} </p>
                         </div>
 
-                        <div className="amountcard divbtninc flexrow">
+                        <div className="amountcard divbtninc flexcol center">
                           <button
                             className="incbtn"
                             onClick={() => {
@@ -74,7 +74,7 @@ function CartNavSide(props) {
             <div className="">
               <div className="w100 flexrowend">
                 <p className="textcolor text28">
-                  מחיר כולל : <strong>{total}$</strong>
+                  מחיר כולל : <strong>{total}ש"ח</strong>
                 </p>
               </div>
 
@@ -105,8 +105,8 @@ function CartNavSide(props) {
           <div className="element flexcenter">
             <GoShop
               disabledPopUp={props.disabledPopUp}
-              titleText={"you have no items in cart"}
-              btn={"go shop !"}
+              titleText={"אין לך מוצרים בעגלה"}
+              btn={"לך לקנות עכשיו!"}
             />
           </div>
         )}

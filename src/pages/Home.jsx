@@ -30,7 +30,8 @@ function Home() {
       </div>
 <br />
      <HomeAboutComp/>
-     <br /><br /><br /><br /><br />
+     <br /><br /><br />
+     <br /><br />
 
      <div className="bgfixc">
 

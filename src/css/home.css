@@ -55,7 +55,7 @@ height: 54vh;
 }
 
 .homeAboutComp{
-    height: 80vh;
+   min-height: 80vh;
     width: 100%;
  
 }
@@ -133,9 +133,19 @@ height: 54vh;
     }
     
 }
-
+.car{
+    height: 50vh;
+    
+}
+.commentswiper{
+    width: 700px;
+    
+}
 .maxmin{
     max-width: 200px;
+}
+.minh50{
+    min-height: 50vh;
 }
 .sideB{
     height: 90%;
@@ -149,8 +159,7 @@ height: 54vh;
 
 }
 .p{
-    margin-bottom: 20px;
-    width: 70%;
+   
  font-size: 1.6rem;
 }
 

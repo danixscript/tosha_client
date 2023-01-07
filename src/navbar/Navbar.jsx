@@ -51,7 +51,7 @@ function Navbar(props) {
             <div className="flexrow ">
             <div className="flexcol centerright">
             <p> טלפון: 05-58174355</p>
-               <p>א - ה משעה 7:00</p>
+               <p>א - ה משעה 8:00 - 17:00 ן -8:00-14:30</p>
             
             </div>
             <div className="ksv"></div>

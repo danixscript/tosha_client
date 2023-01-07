@@ -1,9 +1,7 @@
 import "../css/App.css";
 import "../css/placeorder.css";
-import CostumerInfo from "../components/order/CostumerInfo";
 import { useDispatch, useSelector } from "react-redux";
-import CartList from "../components/cart/CartList";
-import Paybox from "../components/order/Paybox";
+
 import axiosConfig from "../config/AxiosConfig";
 import * as actionTypes from "../store/Actions";
 import { Navigate } from "react-router-dom";

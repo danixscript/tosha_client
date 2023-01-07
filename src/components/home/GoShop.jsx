@@ -6,7 +6,7 @@ function GoShop(props) {
  
 
   return (
-    <div onClick={props.disabledPopUp} className="goshop h100 w100">
+    <div onClick={props.disabledPopUp} className="goshop h100 drtl w100">
         <p className="text" > {props.titleText} <NavLink  to={'/store' } className="gologbtn">{props.btn}</NavLink></p>
 
     </div>
