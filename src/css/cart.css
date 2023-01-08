@@ -33,10 +33,17 @@
 .cartDesign{
  height: 100%; 
 }
+.input{
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 
 
-
+.onepart{
+    border-bottom: 1px solid white;
+}
 
 

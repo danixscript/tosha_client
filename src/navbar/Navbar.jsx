@@ -112,12 +112,13 @@ function Navbar(props) {
             <div className="flexrow colorred">
              
               {cart.cardItems && cart.cardItems.length > 0 ? (
-                <div className="cartNumber flexcenter">
+                <div className=" ">
                   <p className="cartNumberin">{cart.cardItems.length}</p>
                 </div>
               ) : (
                 0
-              )}<AddShoppingCartIcon/>
+              )}
+              <AddShoppingCartIcon/>
             </div>
 
           </div>

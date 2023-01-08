@@ -102,10 +102,11 @@ function PlaceOrder(props) {
 
   return (
     <div className=" paddingyakuza  minpage">
-      <h1> {location.state.type == "TA" ? "TAהזמנה ב  " : "הזמנה בלשבת"}</h1>
 
       <div className="flexrow bet w100">
         <div className="orderside">
+        <h1 className="drtl"> {location.state.type == "TA" ? "TAהזמנה ב  " : "הזמנה בלשבת"}</h1>
+
           <TablePlaceOrder rows={item.cardItems} />
         </div>
 
@@ -121,10 +122,10 @@ function PlaceOrder(props) {
             <div className="selectPeuple flexcol ">
               <div className="form">
                 {!istheuserChoose ? (
-                  <div className="o">
+                  <div className="flexcol center">
                     <h1>כמה אנשים תהיו</h1>
 
-                   <input onChange={getPepuleCount} type="number" max={0} /> <button onClick={getPepuleCountClick}>שלח</button>
+                   <input onChange={getPepuleCount} type="number" className="input" max={0} /> <button onClick={getPepuleCountClick}>שלח</button>
                   </div>
                 ) : (
                   <div className="">
@@ -137,15 +138,17 @@ function PlaceOrder(props) {
                         )}
                       </div>
                     ) : (
-                      <div className="form  ">
-                        <div onClick={goBackto} className="back">
+                      <div className="form flexcol center ">
+                   <div className="flexcol">
+                   <div onClick={goBackto} className="back">
                          חזור אחורה
                         </div>
                         <h1> אנה הזינו פרטי תשלום </h1>
-                        <h5>הערות נוספות?</h5>
+                        <h4>הערות נוספות?</h4>
                         <textarea name="" onChange={gettext} id="" cols="30" rows="10"></textarea>
 
                         <PlaceOrderForm buyItem={buyItem} />
+                   </div>
                       </div>
                     )}
                   </div>

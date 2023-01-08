@@ -9,6 +9,7 @@ import Img2 from '../image/toshappl2.jpg'
 import Logo from '../image/a3.jpeg'
 
 import Img3 from '../image/toshappl3.jpg'
+import Caruseld from "../components/carusel/Caruseld";
 
 
 
@@ -40,7 +41,7 @@ function About() {
 
 </div>
 
-
+<Caruseld/>
 <br /><br /><br />
 <div className="logoSite flexcol center">
        

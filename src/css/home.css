@@ -181,3 +181,25 @@ height: 54vh;
 h1{
     font-weight: 100;
 }
+
+.comm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.lilcirc{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: url('../image/a2.jpeg');
+    object-fit: cover;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+.pc{
+    text-align: center;
+    direction: rtl;
+}

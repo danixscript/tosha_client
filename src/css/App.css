@@ -266,7 +266,9 @@ padding: 5px;
   cursor: pointer;
   
 }
-
+.minh90{
+  min-height: 90vh;
+}
 .navphon{
   display: none;
   opacity: 0;

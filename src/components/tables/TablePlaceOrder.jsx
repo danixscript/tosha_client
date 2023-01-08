@@ -31,10 +31,10 @@ export default function TablePlaceOrder(props) {
               </TableCell>
               <TableCell align="right"><img src={row.productimg} alt="" className="img maxxhh" /></TableCell>
 
-              <TableCell align="right">{row.itemname}</TableCell>
-              <TableCell align="right">{row.price}</TableCell>
-              <TableCell align="right">{row.amount}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
+              <TableCell align="right"><p className="pnow">{row.itemname}</p></TableCell>
+              <TableCell align="right"><p className="pnow">{row.price}</p></TableCell>
+              <TableCell align="right"><p className="pnow">{row.amount}</p></TableCell>
+              <TableCell align="right"><p className="pnow">{row.protein}</p></TableCell>
             </TableRow>
           ))}
         </TableBody>

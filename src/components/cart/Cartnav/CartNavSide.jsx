@@ -20,21 +20,22 @@ function CartNavSide(props) {
                 total = total + e.price * e.amount;
 
                 return (
-                  <div key={e.id} className=" boxshadow">
+                  <div key={e.id} className=" onepart">
                     <div className="cartcard ">
                       <div className="flexrow   between  elecart">
+                      <div className="info flexrow between">
+                          <p> X {e.amount}</p>
+                        </div>
                         <div className="imagecard">
                           <img src={e.productimg} alt="" className="img" />
                         </div>
 
-                        <div className="info flexrow between">
-                          <p> כמות {e.amount}</p>
-                        </div>
+                      
                         <div className="info flexrow between">
                           <p> ש"ח{e.price} </p>
                         </div>
 
-                        <div className="amountcard divbtninc flexcol center">
+                        <div className="amountcard divbtninc flexrow center">
                           <button
                             className="incbtn"
                             onClick={() => {
@@ -56,7 +57,7 @@ function CartNavSide(props) {
 
                         <div className="deletall">
                           <button
-                            className="logout"
+                            className=""
                             id={e.id}
                             onClick={() => {
                               props.deleteall(e);
