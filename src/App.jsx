@@ -72,7 +72,7 @@ function closeError(){
   <div className="ordersWaiting flexcol h100">
      {orders.notActiveOrders.map((e)=>{
       return(
-<div >
+<div className='divoforders'>
 
   {
     (()=>{
