@@ -14,7 +14,7 @@ function Store() {
   const products = useSelector((state ) => state.products);
   const cartItems = useSelector((state ) => state.cart);
   const [currentPage, setCurrentPage] = useState(1);
-  const [arrayPerPage, setArrayPerPage] = useState(5);
+  const [arrayPerPage, setArrayPerPage] = useState(6);
 
   useEffect(() => {
     signProduct() 

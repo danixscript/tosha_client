@@ -13,10 +13,11 @@ const user =  useSelector((state)=>state.user);
     <div className="flexcenter w100">
     <div className="containert">
       <div className="storebox drtl">
-        <h1 className="primery_header">store </h1>
+        <h1 className="primery_header">החנות שלנו </h1>
     <div className=" ">
 
-    <div className="container_all"><h1>מתוקים וכאלה</h1>
+    <div className="container_all">
+      
         <div className="box_inside gridstore">
           
             {props.array && props.array.length > 0? props.array.map((e)=>{
