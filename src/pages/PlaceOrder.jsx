@@ -143,7 +143,7 @@ function PlaceOrder(props) {
                    <div onClick={goBackto} className="back">
                          חזור אחורה
                         </div>
-                        <h1> אנה הזינו פרטי תשלום </h1>
+                        <h1> אנא הזינו פרטי תשלום </h1>
                         <h4>הערות נוספות?</h4>
                         <textarea name="" onChange={gettext} id="" cols="30" rows="10"></textarea>
 

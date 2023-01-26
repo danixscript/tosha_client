@@ -47,7 +47,7 @@ direction: rtl;
 }
 .gridstore{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr  1fr;
 margin-bottom: 50px;
     grid-gap: 15px;
     
